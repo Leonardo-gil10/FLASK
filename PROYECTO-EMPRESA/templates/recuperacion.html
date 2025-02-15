@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sign In Start -->
+        <div class="login-container m-3 py-3">
+            <div class="card" style="max-width: 800px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="img/gallery/logo_clinica_el_rosario.png" alt="Imagen" class="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Recuperar Contraseña</h3>
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="correo@dominio.com">
+                                    <label for="email">Email</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 mb-3">Recuperar Contraseña</button>
+                            </form>
+                            <div class="text-center">
+                                <p class="text-muted mb-2">
+                                    <a href="signin.html">¿Ya tienes una cuenta? Inicia sesión</a>
+                                </p>
+                                <p class="text-muted">
+                                    ¿No tienes una cuenta? <a href="login.html">Regístrate</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sign In End -->
+    </div>
+{% endblock %}    
