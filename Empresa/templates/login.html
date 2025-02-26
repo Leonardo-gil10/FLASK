@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        /* Estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: Arial, sans-serif;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+
+        /* Contenedor del formulario */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        .form-box {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 255, 255, 0.82);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-link {
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .form-title {
+            color: rgb(17, 17, 17);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-description {
+            color: #495057;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-floating {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .form-floating input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        .form-floating label {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            color: #495057;
+            pointer-events: none;
+            transition: 0.2s;
+        }
+
+        .form-floating input:focus ~ label,
+        .form-floating input:not(:placeholder-shown) ~ label {
+            top: -0.6rem;
+            font-size: 0.75rem;
+            color: #007bff;
+        }
+
+        /* Estilo para el botón */
+        .btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.2rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgb(56, 245, 223);
+        }
+
+        /* Enlace de registro */
+        .signup-link {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        .signup-link a {
+            text-decoration: none;
+            color: rgba(30, 229, 255, 0.79);
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección con formulario de inicio de sesión -->
+    <div class="form-container">
+        <div class="form-box">
+            <div class="logo-container">
+                <a href="base.html" class="logo-link">
+                    <img src="static/img/logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <h2 class="form-title">Iniciar Sesión</h2>
+            <p class="form-description">Ingresa tus datos para acceder a tu cuenta</p>
+            <form action="dashboard.html" method="GET" class="form">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="correo@gmail.com" required>
+                    <label for="email"></label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                    <label for="password"></label>
+                </div>
+                <button type="submit" class="btn btn-primary" <li class="nav-item"><a class="nav-link text-dark menu" href="/dashboard"></a></li>Iniciar Sesión</button>
+            </form>
+            <p class="signup-link">¿No tienes cuenta? <a href="/registro">¡Regístrate!</a></p>
+            <p class="signup-link"><a href="/recuperacion">¿Olvidaste tu contraseña?</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

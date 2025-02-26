@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+        <div class="container-fluid ">
+            <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                    <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
+                        <div class="d-flex align-items-center justify-content-center mb-3">
+                            <a href="index.html" class="">
+                                <h3 class="text-primary"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                            </a>
+                        </div>
+                        <h2 class="text-primary">recuperar Contraseña</h2>
+                        <p class="text-black">Ingresa tu correo o  numero de telefono para recuperar la contraseña</p>  
+                        <div class="form-floating mb-3 text-black">
+                            <input type="email" class="form-control" id="email" placeholder="correo@dominio.com">
+                            <label for="email">Email</label>
+                        </div>
+                        <form action="dashboard.html" method="GET">
+                        </form>
+                        <button type="submit" class="btn btn-primary py-3 w-100 mb-4" >Recuperar contraseña</button>
+                    
+                        <p class="text-center mb-0 text-black">No tienes Cuenta? <a href="/registro">Registrate </a></p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sign In End -->
+    </div>
+
+        {% endblock %}
+
